@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    margin: 50px;
+}
+
+a {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #181818 .3s ease;
+    background-color: #777676;
+    border-radius: 30px;
+}
+
+p {
+    margin: 50px;
+}
