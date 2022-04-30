@@ -1,3 +1,6 @@
+body {
+    text-align: center;
+}
 h1 {
     margin: 50px;
 }
@@ -8,11 +11,15 @@ a {
     padding: 15px;
     border-radius: 20px;
     text-decoration: none;
+    width: 30%;
+    display: flex;
+    margin: 10px;
 }
 
 a:hover {
-    color: #181818 .3s ease;
-    background-color: #777676;
+    color: #181818;
+    transition: .3s ease;
+    background-color: #c7c6c6;
     border-radius: 30px;
 }
 
