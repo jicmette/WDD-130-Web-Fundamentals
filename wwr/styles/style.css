@@ -7,6 +7,10 @@ body {
     background-color: black;
 }
 
+.logo {
+    width: 80px;
+}
+
 nav a {
     text-align: center;
     background: black;
@@ -21,13 +25,12 @@ nav a:hover {
 
 header {
     background-color: black;
-
 }
+
 
 #hero {
     text-align: center;
 }
-
 
 #hero a {
     background-color: white;
