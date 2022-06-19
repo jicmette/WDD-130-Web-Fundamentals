@@ -462,7 +462,7 @@ footer a:hover {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1560px) {
 
     .riversgrid {
         width: 80%;
@@ -491,7 +491,8 @@ footer a:hover {
     
 
     .arizona {
-        padding-bottom: 200px;
+        padding-bottom: 300px;
+        margin-bottom: 300px;
     }
 
     .arizona img, .utah img, .idaho img {
