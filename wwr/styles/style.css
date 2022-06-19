@@ -489,5 +489,10 @@ footer a:hover {
         padding-bottom: 20px;
     }
     
+    .arizona img, .utah img, .idaho img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
 
 }
