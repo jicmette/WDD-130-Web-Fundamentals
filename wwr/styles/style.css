@@ -297,11 +297,12 @@ footer a:hover {
     width: auto;
     height: 400px;
     box-shadow: 5px 5px 10px #6f7364;
+    align-self: center;
 }
 
 #idahodesc {
     background-color: #134266;
-    width: 700px;
+    width: 600px;
     height: 500px;
     grid-column: 5/10;
     grid-row: 2/3;
@@ -309,16 +310,17 @@ footer a:hover {
     padding-top: 30px;
 }
 
-#descrip {
+#descrip1 {
     color: #fce172;
     font-size: .9em;
-    padding-left: 150px;
-    padding-right: 100px;
+    border: 0;
+    margin: 0;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 17px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     line-height: 2em;
-
-
 }
 
 /*UTAH*/
@@ -332,19 +334,33 @@ footer a:hover {
 
 .utah img {
     width: auto;
-    height: 400px;
+    height: 450px;
     box-shadow: 5px 5px 10px #6f7364;
+    justify-self: start;
 }
 
 
 #utahdescr {
     background-color: #134266;
-    width: 700px;
-    height: 500px;
+    width: 600px;
+    height: 400px;
     grid-column: 2/6;
     grid-row: 2/3;
-    padding-top: 130px;
+    justify-self: end;
+    align-self: center;
 }
+
+#descrip2 {
+    color: #fce172;
+    font-size: .9em;
+    padding-left: 60px;
+    padding-right: 90px;
+    padding-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2em;
+    text-align: center;
+}
+
 
 
 /*ARIZONA*/
@@ -366,13 +382,24 @@ footer a:hover {
 
 #arizonadesc {
     background-color: #134266;
-    width: 700px;
-    height: 500px;
+    width: 600px;
+    height: 380px;
     grid-column: 5/10;
     grid-row: 2/3;
     justify-self: center;
-    padding-top: 130px;
+    align-self: center;
 
+}
+
+#descrip3 {
+    color: #fce172;
+    font-size: .9em;
+    padding-left: 70px;
+    padding-right: 80px;
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2em;
+    text-align: center;
 }
 
 @media screen and (max-width: 900px) {
@@ -435,19 +462,32 @@ footer a:hover {
     }
 }
 
-@media screen and (max-width: 1588px) {
+@media screen and (max-width: 1567px) {
 
     .riversgrid {
         width: 80%;
         display: block;
         margin: 0 auto;
-        flex-direction: column;
-    }
-
-    .idahodesc {
         justify-self: center;
     }
 
+    #idahodesc {
+        width: auto;
+        height: auto;
+        padding-bottom: 50px;
+    }
   
+    #utahdescr {
+        width: auto;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    
+    #arizonadesc {
+        width: auto;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    
 
 }
