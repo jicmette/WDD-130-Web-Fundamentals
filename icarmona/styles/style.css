@@ -9,12 +9,19 @@ body {
     color: #0E9BAD;
 }
 
+/*  HEADER */
+
 header {
     background-color: #2C2C2A;
     display: grid;
     grid-template-columns: 150px auto;
     align-items: center;
     justify-items: end;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
 }
 
 h1,
@@ -33,35 +40,19 @@ a {
     font-family: 'Ubuntu', sans-serif;
     color: white;
     text-decoration: none;
-    padding: 35px;
+    margin: 35px;
     align-items: center;
 }
 
 a:hover {
     color: #0E9BAD;
-    text-decoration: underline;
-
+    transition: .5s;
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 5px 3px;
 }
 
-#res {
-    border: #0E9BAD 5px solid;
-    color: #0E9BAD;
-    padding: 0.75rem 1rem;
-    border-radius: 10px;
-}
-
-#res:hover {
-    background-color: #0e9bad;
-    color: white;
-}
-
-
-.logo {
-    width: 100%;
-    height: auto;
-}
-
-
+/*  FOOTER*/
 footer {
     display: grid;
     grid-template-columns: 1fr;
@@ -71,8 +62,6 @@ footer {
 .imgfoot {
     width: 32px;
 }
-
-
 
 /*  Me Page */
 
@@ -87,12 +76,12 @@ footer {
     grid-row: 2/3;
     font-size: 80px;
     margin: 0;
+    color: white;
 }
 
 .h2side {
     grid-column: 3/5;
     grid-row: 1/2;
-    align-self: flex-end;
 }
 
 
@@ -101,10 +90,9 @@ footer {
 }
 
 .pside {
-    grid-column: 3/5;
+    grid-column: 3/6;
     text-align: left;
     line-height: 1.5;
-
 }
 
 .mepic {
@@ -115,8 +103,16 @@ footer {
     grid-column: 6/8;
     align-self: center;
     justify-self: left;
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 5px 3px;
 }
 
+.mepic:hover {
+    opacity: .9;
+    transform: scale(1.1);
+    transition: 1s;
+}
 
 
 #imagecent {
@@ -126,11 +122,16 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 5px 10px;
+    margin-bottom: 30px;
 }
 
 .pfoot {
     margin-top: 30px 0;
     border: 0;
+    align-self: center;
 }
 
 .h2lang {
@@ -144,12 +145,47 @@ footer {
     grid-row: 6/7;
     grid-column: 3/4;
     justify-self: center;
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 5px 3px;
+}
+
+.imgh:hover {
+    opacity: .9;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.htpar {
+    grid-column: 3/4;
+    grid-row: 7/8;
+    color: white;
+    align-self: center;
+    justify-self: center;
 }
 
 .imgc {
     width: 32px;
     grid-row: 6/7;
     grid-column: 4/5;
+    justify-self: center;
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 5px 3px;
+}
+
+.imgc:hover {
+    opacity: .9;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+.cspar {
+    grid-column: 4/5;
+    grid-row: 7/8;
+    color: white;
+    align-self: center;
     justify-self: center;
 }
 
@@ -158,6 +194,23 @@ footer {
     grid-row: 6/7;
     grid-column: 5/6;
     justify-self: center;
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 5px 3px;
+}
+
+.imgj:hover {
+    opacity: .9;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.javpar {
+    grid-column: 5/6;
+    grid-row: 7/8;
+    color: white;
+    align-self: center;
+    justify-self: center;
 }
 
 .imgp {
@@ -165,5 +218,37 @@ footer {
     grid-row: 6/7;
     grid-column: 6/7;
     justify-self: center;
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 5px 3px;
 }
 
+.imgp:hover {
+    opacity: .9;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.pytpar {
+    grid-column: 6/7;
+    grid-row: 7/8;
+    color: white;
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+@media screen and (max-width: 1205px) {
+    nav,
+    footer {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+
+    
+}
