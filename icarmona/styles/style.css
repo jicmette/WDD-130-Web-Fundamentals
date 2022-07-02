@@ -239,19 +239,29 @@ footer {
 
 
 
-@media screen and (max-width: 1205px) {
+@media screen and (max-width: 700px) {
     nav,
     footer {
         flex-direction: column;
+        margin: 15px;
     }
 
     nav a {
         display: block;
         margin: 15px;
+        padding-top: 20px;
     }
 
-    .img {
-        margin: 20px;
+    a {
+        margin: 15px;
+    }
+
+    .imgh {
+        margin: 15px;
+    }
+
+    p {
+        margin: 15px;
     }
 
     .h1side {
@@ -259,3 +269,4 @@ footer {
     }
     
 }
+
