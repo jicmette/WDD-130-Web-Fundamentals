@@ -84,7 +84,6 @@ footer {
     grid-row: 1/2;
 }
 
-
 .h2side2 {
     grid-column: 3/5;
 }
@@ -114,7 +113,6 @@ footer {
     transition: 1s;
 }
 
-
 #imagecent {
     width: 50%;
     height: auto;
@@ -129,7 +127,7 @@ footer {
 }
 
 .pfoot {
-    margin-top: 30px 0;
+    margin-top: 30px;
     border: 0;
     align-self: center;
 }
@@ -236,8 +234,6 @@ footer {
     align-self: center;
     justify-self: center;
 }
-
-
 
 @media screen and (max-width: 700px) {
     nav,
