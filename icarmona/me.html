@@ -16,11 +16,14 @@
             <a id="logo" href="me.html">
                 <img class="logo" src="images/ilogo.png" alt="Logo Israel Carmona">
             </a>
-            <nav>
-                <a href="whatido.html">/What I Do</a>
-                <a href="mywork.html">/My Work</a>
-                <a id="res" href="#">/Resume</a>
-            </nav>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="/icarmona/whatido.html">/What I Do</a>
+                    <a href="/icarmona/mywork.html">/My Work</a>
+                </div>
+            </div>
+            <span id="kmore" onclick="openNav()">&#9776; About Me</span>
 
         </header>
 
@@ -31,7 +34,7 @@
                     <h2 class="h2side">Hi, my name is <br></h2>
                     <h1 class="h1side">Israel Carmona.</h1>
                     <h2 class="h2side2">I am a junior web developer.</h2>
-                    <p class="pside">I develop web pages with HTML, CSS and JavaScript. I
+                    <p class="pside">I develop web pages with HTML, CSS, JavaScript and Python. I
                         developed a web site for an IT business, and I am still working on a web site project
                         for a real state agency. I will help make your web site work with functional and effective
                         tools, where your products, services and ideas will be embodied. People is searching for
@@ -82,6 +85,16 @@
             <a id="psite" href="site-plan.html">Site Plan</a>
         </footer>
     </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+        }
+    </script>
 
 </body>
 
