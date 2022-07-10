@@ -99,13 +99,13 @@ a:hover {
 }
 
 #kmore {
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Ubuntu', sans-serif;
     cursor: pointer;
     color: white;
     justify-self: end;
+    margin-right: 30px;
 }
-
 
 #kmore:hover {
     color: #0E9BAD;
@@ -313,6 +313,7 @@ footer {
     justify-self: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    color: white;
 }
 
 .h2wido {
@@ -391,16 +392,7 @@ footer {
         font-size: 50px;
     }
 
+    
+
 }
 
-@media screen and (max-height: 450px) {
-    .overlay a {
-        font-size: 20px
-    }
-
-    .overlay .closebtn {
-        font-size: 30px;
-        top: 15px;
-        right: 35px;
-    }
-}
