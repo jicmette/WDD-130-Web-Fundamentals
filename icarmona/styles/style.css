@@ -626,7 +626,7 @@ input[type=email]::placeholder {
     }
 
     .imgmap {
-        width: 400px;
+        width: 300px;
         height: auto;
     }
 
@@ -637,6 +637,15 @@ input[type=email]::placeholder {
     .h1side {
         font-size: 50px;
     }
+
+    .h1mywork {
+        font-size: 50px;
+    }
+
+    .h1wido {
+        font-size: 50px;
+    }
+
 
 }
 
