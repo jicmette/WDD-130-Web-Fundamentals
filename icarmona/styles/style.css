@@ -34,6 +34,8 @@ p,
 label {
     font-family: 'Ubuntu', sans-serif;
     font-size: 15px;
+    margin-left: 10px;
+    color: white;
 }
 
 a {
@@ -46,7 +48,7 @@ a {
 
 a:hover {
     color: #0E9BAD;
-    transition: .5s;
+    transition: .7s;
     border: 1px solid;
     padding: 5px;
     box-shadow: 5px 3px;
@@ -126,6 +128,10 @@ footer {
     width: 32px;
 }
 
+.contact {
+    margin: 10px;
+}
+
 /*  Me Page */
 
 .meint {
@@ -190,7 +196,6 @@ footer {
 }
 
 .pfoot {
-    margin-top: 30px;
     border: 0;
     align-self: center;
 }
@@ -416,13 +421,6 @@ footer {
     grid-row: 5/6;
     grid-column: 3/5;
     justify-self: center;
-    justify-self: center;
-    color: #0E9BAD;
-    transition: .5s;
-    border: 1px solid;
-    padding: 5px;
-    box-shadow: 5px 3px;
-    margin: 30px;
 }
 
 .imgcomisa {
@@ -446,20 +444,12 @@ footer {
     grid-row: 5/6;
     grid-column: 6/8;
     justify-self: center;
-    color: #0E9BAD;
-    transition: .5s;
-    border: 1px solid;
-    padding: 5px;
-    box-shadow: 5px 3px;
-    margin: 30px;
 }
 
 .containercontact {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     align-items: center;
-
-
 }
 
 .h1contactme {
@@ -468,23 +458,26 @@ footer {
     font-size: 60px;
     justify-self: center;
     margin-top: 20px;
-    margin-bottom: 0;
-    color: #0E9BAD;
+    margin-bottom: 20px;
+    color: #2CD3E9;
 }
 
 .pcontact {
-    grid-column: 2/5;
+    grid-column: 2/6;
     grid-row: 2/3;
     margin-bottom: 30px;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .formarea {
-    grid-column: 2/5;
+    grid-column: 2/6;
     grid-row: 3/5;
-    
+    padding: 50px;
+
 }
 
 .form1 {
@@ -495,70 +488,108 @@ footer {
 .imgmap {
     grid-column: 6/9;
     grid-row: 2/6;
-    width: 500px;
+    width: 400px;
     height: auto;
     border: 1px solid;
-    padding: 20px;
+    padding: 5px;
     box-shadow: 5px 10px;
     margin-bottom: 30px;
+    justify-self: center;
 }
 
-::placeholder {
-    color: #2C2C2A;
-}
 
 input[type=text] {
-    background-color: #0E9BAD;
+    background-color: #484848;
     color: white;
     grid-column: 2/5;
     width: 100%;
-    height: 20px;
+    height: 40px;
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
     grid-row-start: 3;
-
+    border: 0;
+    outline: none;
+    justify-self: center;
 }
 
+input[type=text]:focus {
+    border-bottom: 5px solid #0E9BAD;
+    transition: .7s;
+}
+
+input[type=text]::placeholder {
+    color: #dbdbdb;
+    padding-left: 10px;
+}
+
+
 input[type=email] {
-    background-color: #0E9BAD ;
+    background-color: #484848;
     color: white;
     grid-column: 2/5;
     width: 100%;
-    height: 20px;
+    height: 40px;
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
     margin-top: 10px;
     justify-self: center;
+    border: 0;
+    outline: none;
+}
+
+input[type=email]:focus {
+    border-bottom: 5px solid #0E9BAD;
+    transition: .7s;
+}
+
+input[type=email]::placeholder {
+    color: #dbdbdb;
+    padding-left: 10px;
 }
 
 #msg {
-    background-color: #0E9BAD;
+    background-color: #484848;
     color: white;
     margin-top: 10px;
     grid-column: 2/6;
     justify-self: center;
     width: 100%;
-    height: 250px;
+    height: 200px;
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    outline: none;
+    resize: none;
+}
+
+#msg:focus {
+    border-bottom: 5px solid #0E9BAD;
+    transition: .7s;
+
+}
+
+#msg::placeholder {
+    color: #dbdbdb;
+    padding: 10px;
 }
 
 .button {
     padding: 7px;
-    background-color: white;
-    color: #2C2C2A;
+    background-color: #2C2C2A;
+    color: #0E9BAD;
     font-size: 16px;
-    border-color: white;
+    border: 2px solid #0E9BAD;
     grid-column: 4/5;
     margin-top: 10px;
     font-family: 'Ubuntu', sans-serif;
+    width: 100px;
 
 }
 
 .button:hover {
-    background-color: #2C2C2A;
-    color: white;
-    transition: .5s;
+    background-color: #0E9BAD;
+    color: #2C2C2A;
+    transition: 1s;
 }
 
 @media screen and (max-width: 700px) {
@@ -584,6 +615,21 @@ input[type=email] {
         margin: 15px;
     }
 
+    .imgnexb {
+        width: 200px;
+        height: auto;
+    }
+
+    .imgcomisa {
+        width: 200px;
+        height: auto;
+    }
+
+    .imgmap {
+        width: 400px;
+        height: auto;
+    }
+
     p {
         margin: 15px;
     }
@@ -592,6 +638,27 @@ input[type=email] {
         font-size: 50px;
     }
 
+}
 
+
+@media screen and (max-width: 1216px) {
+    .containermywork {
+        display: block;
+        height: auto;
+        text-align: center;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 928px) {
+    .containercontact {
+        display: block;
+        height: auto;
+        text-align: center;
+    }
+
+    
 
 }
