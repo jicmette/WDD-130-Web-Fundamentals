@@ -573,7 +573,6 @@ input[type=email]::placeholder {
     color: #0E9BAD;
     font-size: 16px;
     border: 2px solid #0E9BAD;
-    grid-column: 4/5;
     margin-top: 10px;
     font-family: 'Ubuntu', sans-serif;
     width: 100px;
